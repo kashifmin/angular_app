@@ -7,17 +7,20 @@ import { HeaderComponent } from './header.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { CustomerComponent } from './customer/customer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'customer', component: CustomerComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
