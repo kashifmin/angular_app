@@ -1,0 +1,28 @@
+
+<div class="row">
+  <div class="col">
+    <div class="panel">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">Notifications</h4>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let t of todoItems">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{t.title}}</h5>
+                <small>{{ t.time }}</small>
+              </div>
+              <p class="mb-1">{{ t.description}}</p>
+              <small>Actions go here</small>
+            </a>
+          </div>
+        </div>
+     </div>
+    
+    </div>
+  </div>
+  <div class="col">
+    1 of 3
+  </div>
+  <div class="col">
+  </div>
+</div>
