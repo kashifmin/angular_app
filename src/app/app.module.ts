@@ -11,12 +11,14 @@ import { CalendarModule } from 'angular-calendar';
 import { HomeComponent } from './home/home.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SalesComponent } from './sales/sales.component';
+import { ReportsComponent } from './reports/reports.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'customer', component: CustomerComponent},
-  { path: 'sales', component: SalesComponent }
+  { path: 'sales', component: SalesComponent },
+  { path: 'reports', component: ReportsComponent }
 ]
 
 @NgModule({
@@ -25,7 +27,8 @@ const routes: Routes = [
     HeaderComponent,
     HomeComponent,
     CustomerComponent,
-    SalesComponent
+    SalesComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
