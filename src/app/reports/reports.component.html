@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-6"> 
+
+    <div class="card" >
+        <div class="card-block" >
+          <h4 class="card-title">Popular Services</h4>
+          <ngx-charts-bar-vertical
+            [view]="chartConfig1.view"
+            [scheme]="chartConfig1.colorScheme"
+            [results]="chartData1"
+            [gradient]="chartConfig1.gradient"
+            [xAxis]="chartConfig1.showXAxis"
+            [yAxis]="chartConfig1.showYAxis"
+            [legend]="chartConfig1.showLegend"
+            [showXAxisLabel]="chartConfig1.showXAxisLabel"
+            [showYAxisLabel]="chartConfig1.showYAxisLabel"
+            [xAxisLabel]="chartConfig1.xAxisLabel"
+            [yAxisLabel]="chartConfig1.yAxisLabel"
+            (select)="onSelect($event)">
+          </ngx-charts-bar-vertical> 
+        </div>
+    </div>
+
+  </div>
+
+  <div class="col-6"> 
+
+    <div class="card" >
+        <div class="card-block" >
+          <h4 class="card-title">Cars Serviced</h4>
+          <ngx-charts-advanced-pie-chart
+            [view]="chartConfig3.view"
+            [scheme]="chartConfig3.colorScheme"
+            [results]="chartData3"
+            [gradient]="chartConfig3.gradient"
+            (select)="onSelect($event)">
+          </ngx-charts-advanced-pie-chart>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card" >
+        <div class="card-block" >
+          <h4 class="card-title">Sales</h4>
+          <ngx-charts-line-chart
+            [view]="chartConfig2.view"
+            [scheme]="chartConfig2.colorScheme"
+            [results]="chartData2"
+            [gradient]="chartConfig2.gradient"
+            [xAxis]="chartConfig2.showXAxis"
+            [yAxis]="chartConfig2.showYAxis"
+            [legend]="chartConfig2.showLegend"
+            [showXAxisLabel]="chartConfig2.showXAxisLabel"
+            [showYAxisLabel]="chartConfig2.showYAxisLabel"
+            [xAxisLabel]="chartConfig2.xAxisLabel"
+            [yAxisLabel]="chartConfig2.yAxisLabel"
+            (select)="onSelect($event)">
+          </ngx-charts-line-chart> 
+        </div>
+    </div>
+  </div>
+</div>

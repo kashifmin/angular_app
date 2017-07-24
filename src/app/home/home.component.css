@@ -1,0 +1,14 @@
+.list-group-item:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+
+.cal-days {
+    height: 300px;
+}
+
+.cal-cell-row {
+    height: 50px;
+}
